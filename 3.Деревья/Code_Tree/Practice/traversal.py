@@ -5,80 +5,63 @@ class TreeNode:
         self.right = None
 
 
-def iterative_preorder(root):
-    if root is None:
-        return
+class BST:
+    def __init__(self, value):
+        self.root = TreeNode(value)
+        self.length = 1
 
-    stack = [root]
+    # i am trying to implement an iterative pre-order travesal of a tree
 
-    while stack:
-        node = stack.pop()
-        print(node.value)  # Process the node
+    def pre_order(self, root):
+        if root is None:
+            return []
 
-        if node.right:
-            stack.append(node.right)
-        if node.left:
-            stack.append(node.left)
+        stack = [root]
+        result = []
 
+        while stack:
+            current_element = stack.pop()
+            result.append(current_element.value)
+            if current_element.right:
+                stack.append(current_element.right)
+            if current_element.left:
+                stack.append(current_element.left)
 
-def iterative_inorder(root):
-    stack = []
-    current = root
+        return result
 
-    while stack or current:
-        while current:
-            stack.append(current)
-            current = current.left
+    def in_order(self, root):
+        if root is None:
+            return []
 
-        current = stack.pop()
-        print(current.value)  # Process the node
-        current = current.right
+        stack = []
+        result = []
+        current_element = root
 
+        while stack or current_element:
+            while current_element:
+                stack.append(current_element)
+                current_element = current_element.left
+            current_element = stack.pop()
+            result.append(current_element.value)
+            current_element = current_element.right
+        return result
 
-def iterative_postorder(root):
-    if root is None:
-        return
+    def post_order(self, root):
+        if root is None:
+            return []
 
-    stack = []
-    output = []
+        firstStack = [root]
+        secondStack = []
+        while firstStack:
+            current_element = firstStack.pop()
+            secondStack.append(current_element)
+            if current_element.left:
+                firstStack.append(current_element.left)
+            if current_element.right:
+                firstStack.append(current_element.right)
 
-    stack.append(root)
+        result = []
+        while secondStack:
+            result.append(secondStack.pop().value)
 
-    while stack:
-        node = stack.pop()
-        output.append(node.value)  # Process the node
-
-        if node.left:
-            stack.append(node.left)
-        if node.right:
-            stack.append(node.right)
-
-    while output:
-        print(output.pop())  # Print in reverse order
-
-
-# Example usage:
-root = TreeNode(5)
-root.left = TreeNode(3)
-root.right = TreeNode(8)
-root.left.left = TreeNode(1)
-root.left.right = TreeNode(4)
-root.right.right = TreeNode(10)
-
-# Example usage:
-# Constructing a simple binary tree
-#         5
-#        / \
-#       3   8
-#      / \   \
-#     1   4   10
-
-
-print("Iterative Pre-Order Traversal:")
-iterative_preorder(root)
-
-print("\nIterative In-Order Traversal:")
-iterative_inorder(root)
-
-print("\nIterative Post-Order Traversal:")
-iterative_postorder(root)
+        return result
