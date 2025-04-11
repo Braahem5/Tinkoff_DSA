@@ -1,0 +1,1 @@
+give list of ten easy, ten medium and ten hard question on Tree on Leetcode. Make sure the list covers the most common and most asked concept on Tree

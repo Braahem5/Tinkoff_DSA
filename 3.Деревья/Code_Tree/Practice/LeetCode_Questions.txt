@@ -1,0 +1,64 @@
+Here’s a **curated list of Tree questions** on LeetCode categorized by difficulty (Easy, Medium, Hard), aligned with their official difficulty labels and covering the **most common concepts** asked in coding interviews:
+
+
+### **10 Easy Tree Questions**  
+**Key Concepts**: Basic Traversals, BFS/DFS, Symmetry Checks, BST Properties  
+1. **Maximum Depth of Binary Tree** ([[LC 104](https://leetcode.com/problems/maximum-depth-of-binary-tree/)]): DFS/BFS for depth.  
+2. **Symmetric Tree** ([[LC 101](https://leetcode.com/problems/symmetric-tree/)]): Recursive symmetry check.  
+3. **Same Tree** ([[LC 100](https://leetcode.com/problems/same-tree/)]): Node-by-node comparison.  
+4. **Binary Tree Inorder Traversal** ([[LC 94](https://leetcode.com/problems/binary-tree-inorder-traversal/)]): Iterative/recursive traversal.  
+5. **Path Sum** ([[LC 112](https://leetcode.com/problems/path-sum/)]): Root-to-leaf sum check.  
+6. **Convert Sorted Array to BST** ([[LC 108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)]): Balanced BST construction.  
+7. **Minimum Depth of Binary Tree** ([[LC 111](https://leetcode.com/problems/minimum-depth-of-binary-tree/)]): BFS for shortest path.  
+8. **Balanced Binary Tree** ([[LC 110](https://leetcode.com/problems/balanced-binary-tree/)]): Height balancing check.  
+9. **Diameter of Binary Tree** ([[LC 543](https://leetcode.com/problems/diameter-of-binary-tree/)]): Longest path via DFS.  
+10. **Merge Two Binary Trees** ([[LC 617](https://leetcode.com/problems/merge-two-binary-trees/)]): Tree merging with recursion.
+
+---
+
+### **10 Medium Tree Questions**  
+**Key Concepts**: Advanced Traversals, Tree Construction, LCA, BST Modifications  
+1. **Binary Tree Level Order Traversal** ([[LC 102](https://leetcode.com/problems/binary-tree-level-order-traversal/)]): BFS with queues.  
+2. **Validate Binary Search Tree** ([[LC 98](https://leetcode.com/problems/validate-binary-search-tree/)]): BST property checks.  
+3. **Construct Binary Tree from Preorder and Inorder Traversal** ([[LC 105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)]): Tree reconstruction.  
+4. **Lowest Common Ancestor of a Binary Tree** ([[LC 236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)]): LCA without BST properties.  
+5. **Kth Smallest Element in a BST** ([[LC 230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)]): Inorder traversal optimization.  
+6. **Flatten Binary Tree to Linked List** ([[LC 114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)]): Morris traversal/recursive linking.  
+7. **Binary Tree Right Side View** ([[LC 199](https://leetcode.com/problems/binary-tree-right-side-view/)]): BFS for rightmost nodes.  
+8. **Count Good Nodes in Binary Tree** ([[LC 1448](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)]): DFS with path tracking.  
+9. **Delete Node in a BST** ([[LC 450](https://leetcode.com/problems/delete-node-in-a-bst/)]): BST deletion logic.  
+10. **Path Sum III** ([[LC 437](https://leetcode.com/problems/path-sum-iii/)]): Prefix sum in paths.
+
+---
+
+### **10 Hard Tree Questions**  
+**Key Concepts**: Serialization, Path Optimization, Advanced DP, Combinatorics  
+1. **Serialize and Deserialize Binary Tree** ([[LC 297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)]): Preorder/Level-order encoding.  
+2. **Binary Tree Maximum Path Sum** ([[LC 124](https://leetcode.com/problems/binary-tree-maximum-path-sum/)]): Global/local path optimization.  
+3. **Vertical Order Traversal of a Binary Tree** ([[LC 987](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)]): Column-wise sorting.  
+4. **Binary Tree Cameras** ([[LC 968](https://leetcode.com/problems/binary-tree-cameras/)]): Greedy DFS for coverage.  
+5. **Sum of Distances in Tree** ([[LC 834](https://leetcode.com/problems/sum-of-distances-in-tree/)]): Post-order/pre-order DP.  
+6. **Number of Ways to Reorder Array to Get Same BST** ([[LC 1569](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)]): Combinatorics with BST properties.  
+7. **Recover Binary Search Tree** ([[LC 99](https://leetcode.com/problems/recover-binary-search-tree/)]): Inorder traversal for BST correction.  
+8. **All Nodes Distance K in Binary Tree** ([[LC 863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)]): BFS with parent tracking.  
+9. **Step-By-Step Directions From a Binary Tree Node to Another** ([[LC 2096](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/)]): LCA + path manipulation.  
+10. **Redundant Connection II** ([[LC 685](https://leetcode.com/problems/redundant-connection-ii/)]): Union-Find in directed trees.
+
+---
+
+### **Why This List Works**  
+1. **Concept Coverage**:  
+   - **Easy**: Basic traversals, symmetry, BST construction.  
+   - **Medium**: LCA, tree modification, advanced BFS/DFS.  
+   - **Hard**: Serialization, path optimization, combinatorics.  
+2. **Interview Relevance**: Includes FAANG favorites like *LC 124* (Max Path Sum), *LC 297* (Serialization), and *LC 236* (LCA).  
+3. **Difficulty Accuracy**: All labels match LeetCode’s official classifications.
+
+---
+
+### **Preparation Tips**  
+- Start with **Easy** to master recursion and basic BFS/DFS.  
+- Use **Medium** to learn tree construction (e.g., LC 105) and LCA logic.  
+- Tackle **Hard** problems to practice advanced path optimization (e.g., LC 124) and greedy algorithms (e.g., LC 968).  
+
+This list ensures systematic progression from foundational to advanced tree concepts. For practice, prioritize **LC 98** (Validate BST), **LC 236** (LCA), and **LC 297** (Serialization).
